@@ -1,0 +1,146 @@
+#heart {
+    color: red;
+}
+
+#letter {
+    font-size: 1.4em;
+}
+
+header h1 {
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-color: $bg-gray;
+    text-align: center;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1200px;
+    text-align: left;
+}
+
+aside {
+    float: left;
+    margin: 25px 1.5%;
+    width: 18%;
+}
+
+main {
+    float: right;
+    margin: 0 1.5%;
+    width: 75%;
+}
+
+.institution {
+    float: right;
+    clear: both;
+}
+
+.blurb {
+    padding-left: 8em;
+}
+
+.date {
+    display: inline-block;
+    /* text-align:start; */
+    text-indent: -8em;
+}
+
+.long-year-unindent {
+    display: inline-block;
+    text-indent: -2.9em;
+}
+
+.micmac-unindent {
+    display: inline-block;
+    text-indent: -4em;
+}
+
+.rest-unindent {
+    display: inline-block;
+    text-indent: -0.3em;
+}
+
+body,
+p {
+    line-height: 1.428;
+    font-size: 16px;
+    color: $darkgray;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+    font-size: 14px;
+    background-color: $darkgray;
+    color: $lightgray;
+}
+
+h1.sansserif {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 4em;
+}
+
+.first-name {
+    font-weight: 100;
+}
+
+.last-name {
+    font-weight: 300;
+}
+
+#header-small {
+    margin: 0;
+    color: $lightgray;
+    padding-bottom: 10px;
+    font-size: 1.4em;
+    /* font-weight: 100; */
+}
+
+a {
+	text-decoration: none;
+}
+
+a.bold {
+    color: inherit;
+}
+
+a.bold:hover {
+    color: inherit;
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 4px 6px;
+    text-decoration: none;
+	font-size: 16;
+}
+
+// li a:hover:not(.active) {
+//     font-weight: 700;
+// }
+
+.active {
+    font-weight: 700;
+}

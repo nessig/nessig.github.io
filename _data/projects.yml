@@ -1,0 +1,29 @@
+- name: "2D Root Visualizer"
+  description: "Web app for calculating and visualizing fractals."
+  tools: [Python, JavaScript, C++, OpenMP, ZeroMQ, Websockets, HTML5 Canvas]
+  dates: "Fall 2015"
+  github: "https://github.com/nessig/rootviz"
+
+- name: "Riemann Hypothesis Verification"
+  description: "Tools to computationally verify the Riemann Hypothesis for trillions of zeros and the statistical analysis of the zeros of the Riemann Zeta function and the spectra of random Hermitian matrices."
+  tools: [Julia, C++, OpenMP, LAPACK, data analysis]
+  dates: "Spring 2015"
+  github: ""
+
+- name: "Topic Modeling"
+  description: "Investigation of large corpora topic modeling algorithms inspired by nonnegative matrix factorization."
+  tools: [NumPy, SciPy, Pandas, data analysis, machine learning]
+  dates: "Winter 2016"
+  github: "https://github.com/nessig/topic-models-and-nmf"
+
+- name: "Hand Writing Recognition Neural Net"
+  description: "Command line utility for training a neural net using the MNIST dataset written in C++."
+  tools: [C++, machine learning]
+  dates: "Summer 2015"
+  github: ""
+
+- name: "Flask Blog"
+  description: "Bare bones Flask blog with full text search using minimal extensions."
+  tools: [PostgreSQL, AJAX, d3.js]
+  dates: "Fall 2015"
+  github: "https://github.com/nessig/psychoflask"

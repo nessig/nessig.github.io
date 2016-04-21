@@ -1,0 +1,18 @@
+# Site settings
+title: Nolan Essigmann
+email: nhessigmann@gmail.com
+description:
+  A site for my resume, projects, and personal summary.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://nessig.github.io" # the base hostname & protocol for your site
+github_username:  nessig
+
+# Build settings
+markdown: kramdown
+
+sass:
+  sass_dir: _sass
+
+collections:
+  - projects

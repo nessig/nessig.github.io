@@ -1,0 +1,13 @@
+projects:
+  - name: "Hand Writing Recognition Neural Net"
+    description: "Command line utility for training a neural net using the MNIST dataset written in C++."
+    tools: [C++]
+    dates: "Summer 2015"
+  - name: "Flask Blog"
+    description: "Bare bones Flask blog with full text search using minimal extensions."
+    tools: [PostgreSQL, AJAX, d3.js]
+    dates: "Fall 2015"
+  - name: "2D Root Visualizer"
+    description: "Web app for visualizing fractals written in C++, Python, and Javascript."
+    tools: [OpenMP, ZeroMQ, Websockets, HTML5 Canvas]
+    dates: "Fall 2015"

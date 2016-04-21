@@ -1,16 +1,41 @@
----
-layout: default
-stylesheet: resume.css
-title: Resume
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div id="container">
+  <head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="My current resume.">
+<meta name="keywords" content="Resume,Essigmann,Software,Developer">
+<meta name="author" content="Nolan Essigmann">
+<title>Nolan Essigmann</title>
+<!-- <link rel="stylesheet" href="/css/page.stylesheet" /> -->
+<link rel="stylesheet" href="/css/resume.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
+
+	<header>
+        <h1 class="sansserif"><span class="first-name">Nolan</span><span class="last-name">Essigmann</span></h1>
+        <p id="header-small">mathematician + developer who loves solving problems</p>
+</header>
+
+
+	<div id="container">
 
     <aside>
 	  <ul>
-		{% for navp in site.data.navpages %}
-		<li><a class="bold{% if navp.name == page.title %} active{% endif %}" href="{{ navp.url }}">{{ navp.name }}</a></li>
-		{% endfor %}
+		
+		<li><a class="bold" href="/">Home</a></li>
+		
+		<li><a class="bold active" href="/resume">Resume</a></li>
+		
+		<li><a class="bold" href="/projects">Projects</a></li>
+		
       </ul>
 	<hr/>
         <h3>contact</h3>
@@ -122,3 +147,7 @@ title: Resume
         </section>
     </main>
 </div>
+
+
+  </body>
+</html>

@@ -1,52 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+stylesheet: project.css
+title: Projects
+---
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My list of projects.">
-    <meta name="keywords" content="Projects,Essigmann,Software,Developer">
-    <meta name="author" content="Nolan Essigmann">
-    <title>Nolan Essigmann</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-</head>
-
-<body>
-    <header>
-        <h1 class="sansserif"><span class="first-name">Nolan</span><span class="last-name">Essigmann</span></h1>
-        <p id="header-small">mathematician + developer who loves solving problems</p>
-    </header>
-    <div id="container">
-        <main>
-            <section class="qualifications" id="experience">
-                <h2><span id="pro">pro</span>jects</h2>
-                <div class="blurb">
-                    <span class="date">Summer 2015</span>
-                    <strong class="micmac-unindent">Micmac Environmental Health Lab</strong>
-                    <strong class="institution">The Aroostook Band of Micmacs</strong>
-                    <br/>
-                    <em>Volunteer Lab Technician in Environmental Health</em>
-                    <p>Repaired atomic absorption spectrometer for the Micmac Tribe, allowing them to test tribal waters for toxins in-house; my work saved the lab enough money to hire an additional full time technician.</p>
-                </div>
-                <div class="blurb">
-                    <span class="date">2013</span>
-                    <strong class="rest-unindent">Laboratory of Professor Adam Arkin</strong>
-                    <strong class="institution">University of California, Berkeley</strong>
-                    <br/>
-                    <!-- <strong class="institution">Lawrence Berkeley National Laboratory</strong> -->
-                    <!-- <br/> -->
-                    <em>Undergraduate Researcher in Synthetic and Systems Biology</em>
-                    <p>Designed high-throughput protein-protein interactomics assays using Python and SQL.</p>
-                </div>
-            </section>
-        </main>
-    </div>
-    <footer>
-
-    </footer>
-
-</body>
-
-</html>
+<div id="container">
+    <aside>
+        <ul>
+            {% for navp in site.data.navpages %}
+            <li><a class="bold{% if navp.name == page.title %} active{% endif %}" href="{{ navp.url }}">{{ navp.name }}</a></li>
+            {% endfor %}
+        </ul>
+        <hr/>
+		<h3>Github Repositories</h3>
+		{% for proj in site.data.projects %}
+		{% if proj.github != '' %}
+		<p><a class="color" href="{{ proj.github }}">{{ proj.name }}</a></p>
+		{% endif %}
+		{% endfor %}
+    </aside>
+    <main>
+        <section>
+            <h2><span id="proj">pro</span>jects</h2>
+			{% for proj in site.data.projects %}
+            <div>
+				{% if proj.github != '' %}
+				<a class="color" href="{{ proj.github }}"><i class="fa fa-github"></i>
+				  <span class="names">{{ proj.name }}</span></a>
+				{% else %} <span class="names">{{ proj.name }}</span>
+				{% endif %}
+				<span class="dates">{{proj.dates}}</span>
+                <p>{{ proj.description }}</p>
+				 {% for tool in proj.tools %}
+				  <span class="skill">{{ tool }}</span>
+				  {% endfor %}
+            </div>
+			<br/>
+			<br/>
+			{% endfor %}
+        </section>
+    </main>
+</div>
