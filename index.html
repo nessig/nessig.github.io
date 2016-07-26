@@ -5,61 +5,61 @@ title: Home
 ---
 
 <div id="container">
-    <aside>
-        <ul>
-            {% for navp in site.data.navpages %}
-            <li><a class="bold{% if navp.name == page.title %} active{% endif %}" href="{{ navp.url }}">{{ navp.name }}</a></li>
-            {% endfor %}
-        </ul>
-        <hr/>
-        <div>
-            <img alt="#" src="img/profile.jpeg" />
-        </div>
-
-        <h3>Skills</h3>
-        <span class="skill">Python</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">Julia</span>
-        <span class="skill">C++</span>
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">statistics</span>
-        <span class="skill">NumPy</span>
-        <span class="skill">Pandas</span>
-        <span class="skill">Flask</span>
-        <span class="skill">Django</span>
-        <span class="skill">data science</span>
-        <span class="skill">machine learning</span>
-        <span class="skill">AngularJS</span>
-        <span class="skill">*nix</span>
-    </aside>
-    <main>
-        <section class="summary" id="education">
-            <h2>Summary of education</h2>
-            <p>
-                I received my degree in Mathematics from MIT last June. I focused in on experimental mathematics, which basically meant that I got to explore mathematical structures, calculate lots of weird but really useful statistics, and computationally verify conjectures using Python, Julia, and C++! I received a strong background in the theory and application of data structures, algorithms, and machine learning through many undergraduate and graduate courses. Additionally I have a broad exposure to the sciences from courses in subjects ranging from quantum mechanics to organic synthesis to systems biology. Outside of academics I have years of laboratory research experience, and spent a year of my undergraduate working at Lawrence Berkeley National Laboratory. I have also done research within industry, where I focused on repairing instruments that were critical to the development of new revenue sources.
-            </p>
-        </section>
-        <section class="summary" id="program">
-            <h2>Learning to program</h2>
-            <p>My first exposure to programming was using Python to visualize and experimentally explore the structural and statistical properties of my favorite mathematical objects. Although computationally experimenting with my coursework was an endlessly entertaining hobby and invaluable learning aid, for a long time I was content knowing just enough programming to get my code to run. Upon realizing that one of my experiments would probably still be running long after the heat death of the universe, I promptly signed up for an advanced course on algorithms and downloaded gcc.</p>
-            <p>Although I appreciated the speed and fine-grained control of C and C++, I missed the productivity and elegance of Python. Why couldn't I have my favorite aspects of both? Fortunately, my problem was solved by one of my favorite professors! Professor Alan Edelman came up with Julia to fill the niche of high-level and high-performance languages. With Julia I developed my first large software projects, including: tools to computationally verify the Riemann Hypothesis for trillions of zeros and an API for visualizing the statistical results of experiments on eigenvalues of large random matrices.</p>
-        </section>
-
-        <section class="summary" id="web">
-            <h2>Web apps</h2>
-            <p>I learned web programming because I wanted to be able to share experimental math tools I made with everyone over a rich user interface and because I love learning new technologies. The majority of my web apps consist of RESTful web services written in Python (usually Flask) being consumed by a lightweight JavaScript frontend. I try to keep my UI fast and responsive by identifying bottlenecks and leveraging web technologies, libraries, and design patterns. In interactive and realtime apps I’ve used AngularJS, D3.js, and Websockets. For computationally intensive services I’ve used ZeroMQ to manage messaging between the web app and backend worker processes written in optimized C++.</p>
-        </section>
-
-        <section class="summary" id="statistics">
-            <h2>Statistics</h2>
-            <p>I am experienced in the theory and application of machine learning and statistics, including: classification, regression, model selection, recommender systems, hypothesis testing, and spectral methods. I also have significant experience with the statistical and numerical linear algebra package ecosystems in Python, Julia, and MATLAB. Experience with statistical modeling in R. Relevant projects: statistical analysis of the zeros of the Riemann Zeta function and the spectra of random Hermitian matrices, investigation of large corpora topic modeling algorithms inspired by nonnegative matrix factorization, comparison of ANN and SVM models for handwritten digit classification using the MNIST dataset.</p>
-        </section>
-
-        <section class="summary" id="seeking">
-            <h2>What I am looking for</h2>
-            <p>I am interested working on services and products that actually do some discernible amount of good for the people using them. I would like to be able to go to work knowing that what I'm doing is having a positive impact. A work culture that promotes learning, teaching, collaboration, and opportunities to grow as a new developer are all important to me. Although I'm excited to work with friendly teams on any project, I am particularly interested in working on projects where I can utilize and develop my skills in data science, web development, and distributed systems.</p>
-        </section>
-
-    </main>
+  <aside>
+    <ul>
+      {% for navp in site.data.navpages %}
+      <li><a class="bold{% if navp.name == page.title %} active{% endif %}" href="{{ navp.url }}">{{ navp.name }}</a></li>
+      {% endfor %}
+    </ul>
+    <hr/>
+    <div>
+      <img alt="#" src="img/profile.jpeg" />
+    </div>
+    
+    <h3>Skills</h3>
+    <span class="skill">Python</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">Julia</span>
+    <span class="skill">C++</span>
+    <span class="skill">HTML</span>
+    <span class="skill">CSS</span>
+    <span class="skill">statistics</span>
+    <span class="skill">NumPy</span>
+    <span class="skill">Pandas</span>
+    <span class="skill">Flask</span>
+    <span class="skill">Django</span>
+    <span class="skill">data science</span>
+    <span class="skill">machine learning</span>
+    <span class="skill">AngularJS</span>
+    <span class="skill">*nix</span>
+  </aside>
+  <main>
+    <section class="summary" id="education">
+      <h2>Summary of education</h2>
+      <p>
+        I received my degree in Mathematics from MIT last June. I focused in on experimental mathematics, which basically meant that I got to explore mathematical structures, calculate lots of weird but really useful statistics, and computationally verify conjectures using Python, Julia, and C++! I received a strong background in the theory and application of data structures, algorithms, and machine learning through many undergraduate and graduate courses. Additionally I have a broad exposure to the sciences from courses in subjects ranging from quantum mechanics to organic synthesis to systems biology. Outside of academics I have years of laboratory research experience, and spent a year of my undergraduate working at Lawrence Berkeley National Laboratory. I have also done research within industry, where I focused on repairing instruments that were critical to the development of new revenue sources.
+      </p>
+    </section>
+    <section class="summary" id="program">
+      <h2>Learning to program</h2>
+      <p>My first exposure to programming was using Python to visualize and experimentally explore the structural and statistical properties of my favorite mathematical objects. Although computationally experimenting with my coursework was an endlessly entertaining hobby and invaluable learning aid, for a long time I was content knowing just enough programming to get my code to run. Upon realizing that one of my experiments would probably still be running long after the heat death of the universe, I promptly signed up for an advanced course on algorithms and downloaded gcc.</p>
+      <p>Although I appreciated the speed and fine-grained control of C and C++, I missed the productivity and elegance of Python. Why couldn't I have my favorite aspects of both? Fortunately, my problem was solved by one of my favorite professors! Professor Alan Edelman came up with Julia to fill the niche of high-level and high-performance languages. With Julia I developed my first large software projects, including: tools to computationally verify the Riemann Hypothesis for trillions of zeros and an API for visualizing the statistical results of experiments on eigenvalues of large random matrices.</p>
+    </section>
+    
+    <section class="summary" id="web">
+      <h2>Web apps</h2>
+      <p>I learned web programming because I wanted to be able to share experimental math tools I made with everyone over a rich user interface and because I love learning new technologies. The majority of my web apps consist of RESTful web services written in Python (usually Flask) being consumed by a lightweight JavaScript frontend. I try to keep my UI fast and responsive by identifying bottlenecks and leveraging web technologies, libraries, and design patterns. In interactive and realtime apps I’ve used AngularJS, D3.js, and Websockets. For computationally intensive services I’ve used ZeroMQ to manage messaging between the web app and backend worker processes written in optimized C++.</p>
+    </section>
+    
+    <section class="summary" id="statistics">
+      <h2>Statistics</h2>
+      <p>I am experienced in the theory and application of machine learning and statistics, including: classification, regression, model selection, recommender systems, hypothesis testing, and spectral methods. I also have significant experience with the statistical and numerical linear algebra package ecosystems in Python, Julia, and MATLAB. Experience with statistical modeling in R. Relevant projects: statistical analysis of the zeros of the Riemann Zeta function and the spectra of random Hermitian matrices, investigation of large corpora topic modeling algorithms inspired by nonnegative matrix factorization, comparison of ANN and SVM models for handwritten digit classification using the MNIST dataset.</p>
+    </section>
+    
+    <section class="summary" id="seeking">
+      <h2>What I am looking for</h2>
+      <p>I am interested working on services and products that actually do some discernible amount of good for the people using them. I would like to be able to go to work knowing that what I'm doing is having a positive impact. A work culture that promotes learning, teaching, collaboration, and opportunities to grow as a new developer are all important to me. Although I'm excited to work with friendly teams on any project, I am particularly interested in working on projects where I can utilize and develop my skills in data science, web development, and distributed systems.</p>
+    </section>
+    
+  </main>
 </div>
