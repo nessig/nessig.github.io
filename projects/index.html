@@ -5,39 +5,39 @@ title: Projects
 ---
 
 <div id="container">
-    <aside>
-        <ul>
-            {% for navp in site.data.navpages %}
-            <li><a class="bold{% if navp.name == page.title %} active{% endif %}" href="{{ navp.url }}">{{ navp.name }}</a></li>
-            {% endfor %}
-        </ul>
-        <hr/>
-		<h3>Github Repositories</h3>
-		{% for proj in site.data.projects %}
-		{% if proj.github != '' %}
-		<p><a class="color" href="{{ proj.github }}">{{ proj.name }}</a></p>
-		{% endif %}
-		{% endfor %}
-    </aside>
-    <main>
-        <section>
-            <h2><span id="proj">pro</span>jects</h2>
-			{% for proj in site.data.projects %}
-            <div>
-				{% if proj.github != '' %}
-				<a class="color" href="{{ proj.github }}"><i class="fa fa-github"></i>
-				  <span class="names">{{ proj.name }}</span></a>
-				{% else %} <span class="names">{{ proj.name }}</span>
-				{% endif %}
-				<span class="dates">{{proj.dates}}</span>
-                <p>{{ proj.description }}</p>
-				 {% for tool in proj.tools %}
-				  <span class="skill">{{ tool }}</span>
-				  {% endfor %}
-            </div>
-			<br/>
-			<br/>
-			{% endfor %}
-        </section>
-    </main>
+  <aside>
+    <ul>
+      {% for navp in site.data.navpages %}
+      <li><a class="bold{% if navp.name == page.title %} active{% endif %}" href="{{ navp.url }}">{{ navp.name }}</a></li>
+      {% endfor %}
+    </ul>
+    <hr/>
+    <h3>Github Repositories</h3>
+    {% for proj in site.data.projects %}
+    {% if proj.github != '' %}
+    <p><a class="color" href="{{ proj.github }}">{{ proj.name }}</a></p>
+    {% endif %}
+    {% endfor %}
+  </aside>
+  <main>
+    <section>
+      <h2><span id="proj">pro</span>jects</h2>
+      {% for proj in site.data.projects %}
+      <div>
+	{% if proj.github != '' %}
+	<a class="color" href="{{ proj.github }}"><i class="fa fa-github"></i>
+	  <span class="names">{{ proj.name }}</span></a>
+	{% else %} <span class="names">{{ proj.name }}</span>
+	{% endif %}
+	<span class="dates">{{proj.dates}}</span>
+        <p>{{ proj.description }}</p>
+	{% for tool in proj.tools %}
+	<span class="skill">{{ tool }}</span>
+	{% endfor %}
+      </div>
+      <br/>
+      <br/>
+      {% endfor %}
+    </section>
+  </main>
 </div>

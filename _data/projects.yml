@@ -1,18 +1,18 @@
 - name: "2D Root Visualizer"
-  description: "Web app for calculating and visualizing fractals."
+  description: "Web app/service for calculating and visualizing fractals."
   tools: [Python, JavaScript, C++, OpenMP, ZeroMQ, Websockets, HTML5 Canvas]
   dates: "Fall 2015"
   github: "https://github.com/nessig/rootviz"
 
 - name: "Riemann Hypothesis Verification"
-  description: "Tools to computationally verify the Riemann Hypothesis for trillions of zeros and the statistical analysis of the zeros of the Riemann Zeta function and the spectra of random Hermitian matrices."
-  tools: [Julia, C++, OpenMP, LAPACK, data analysis]
+  description: "Out-of-core tools to computationally verify the Riemann Hypothesis for trillions of zeros and the statistical analysis of the zeros of the Riemann Zeta function and the spectra of random Hermitian matrices."
+  tools: [Python, Julia, C++, OpenMP, LAPACK, data analysis]
   dates: "Spring 2015"
   github: ""
 
 - name: "Topic Modeling"
   description: "Investigation of large corpora topic modeling algorithms inspired by nonnegative matrix factorization."
-  tools: [NumPy, SciPy, Pandas, data analysis, machine learning]
+  tools: [NumPy, SciPy, Pandas, Jupyter Notebooks, data analysis, machine learning]
   dates: "Winter 2016"
   github: "https://github.com/nessig/topic-models-and-nmf"
 
@@ -22,8 +22,8 @@
   dates: "Summer 2015"
   github: ""
 
-- name: "Flask Blog"
-  description: "Bare bones Flask blog with full text search using minimal extensions."
+- name: "Flask Social Network"
+  description: "Bare bones Flask social network/blog with full text search using minimal extensions."
   tools: [PostgreSQL, AJAX, d3.js]
   dates: "Fall 2015"
   github: "https://github.com/nessig/psychoflask"
